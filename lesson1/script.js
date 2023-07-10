@@ -8,7 +8,7 @@
 // }
 
 function ChangeColor() {
-    var color = [];
+    var color = ["red","black","yellow","purple","orange","green","blue","aqua"];
 
     var randomIndex = Math.floor(Math.random() * color.length);
 

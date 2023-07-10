@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian&display=swap');
+body{
+    font-family: 'Noto Serif Georgian', serif;
+}
+.container{
+    border: 1px solid black;
+
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hex-colors{
+    border: 1px solid black;
+    text-align: center;
+}
+.hex-colors h1{
+    font-size: 2rem;
+    animation: changecolor 5s infinite alternate;
+}
+.hex-colors h3{
+    border: 1px solid black;
+    font-size: 2rem;
+    margin-top: 15%;
+}
+@keyframes changecolor{
+    0%{
+        color: blue;
+    }
+    20%{
+        color: red;
+    }
+    40%{
+        color: green;
+    }
+    60%{
+        color: rgb(38, 49, 212);
+    }
+    80%{
+        color: rgb(9, 6, 54);
+    }
+    100%{
+        color: brown;
+    }
+}
+
+@media(max-width:480px){
+    .hex-colors h1{
+        font-size: 1.5rem;
+    }
+    .hex-colors h2{
+        font-size: 1.5rem;
+    }
+}
