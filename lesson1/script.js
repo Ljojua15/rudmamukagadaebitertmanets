@@ -1,10 +1,18 @@
-var main = 0;
+// var main =0;
 
-function ChangeColor(){
-    var image = ["blue","purple","red","black","yellow","green","brown","orange"];
+// function ChangeColor(){
+//     var image = ["blue","purple","red","black","yellow","green","brown","orange"];
+//     document.getElementsByTagName("body")[0].style.background = image[main++];
+//     if(main > image.length - 1)
+//     main = 0;
+// }
 
-    document.getElementsByTagName("body")[0].style.background = image[main++];
+function ChangeColor() {
+    var color = [];
 
-    if(main > image.length - 1)
-    main = 0;
+    var randomIndex = Math.floor(Math.random() * color.length);
+
+    var randomColor = color[randomIndex];
+
+    document.getElementsByTagName("body")[0].style.background = randomColor;
 }
