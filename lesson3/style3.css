@@ -1,11 +1,12 @@
 body {
+    overflow: hidden;
     background: #06bcc1;
 }
 
 .container {
     border: 5px solid orange;
     width: 95%;
-    height: 100vh;
+    height: 95vh;
     display: flex;
     text-align: center;
 }
@@ -28,6 +29,10 @@ body {
 
 .firstclass p, .firstclass h3 {
     font-size: 1.5rem;
+
+}
+.firstclass p{
+    animation: changecolor 10s infinite alternate;
 }
 
 @media(max-width:480px){
@@ -35,3 +40,26 @@ body {
         font-size: 1rem;
     }
 }
+
+@keyframes changecolor{
+    0%{
+        color: blue;
+    }
+    20%{
+        color: red;
+    }
+    40%{
+        color: green;
+    }
+    60%{
+        color: rgb(38, 49, 212);
+    }
+    80%{
+        color: rgb(9, 6, 54);
+    }
+    100%{
+        color: brown;
+    }
+}
+
+
