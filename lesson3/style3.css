@@ -3,7 +3,34 @@ body {
 }
 
 .container {
+    border: 5px solid orange;
     width: 95%;
     height: 100vh;
     display: flex;
+}
+.mainclick{
+    text-align: center;
+}
+.firstclass{
+    border: 10px solid #f4d1ae;
+    width: 900px;
+    height: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    color: grey;
+   background-color: #f4edea;
+}
+
+.firstclass p, .firstclass h3 {
+    font-size: 1.5rem;
+}
+
+@media(max-width:480px){
+    .firstclass p, .firstclass h3 {
+        font-size: 1rem;
+    }
 }
