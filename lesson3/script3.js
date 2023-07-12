@@ -6,7 +6,6 @@ function getQuote(){
         .then(data => {
     contentText = document.getElementById('text')
     contentText.innerHTML = data.content
-  
     authorText = document.getElementById('author')
     authorText.innerHTML = data.author
   
