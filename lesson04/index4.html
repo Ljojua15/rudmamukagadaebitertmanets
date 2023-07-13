@@ -11,7 +11,12 @@
     
     <div class="maincontainer">
         <div class="counter">
-            
+            <H1>COUNTER</H1>
+            <H1 id="count">0</H1>
+            <div>
+                <button  type="button" onclick="change(1)" class="bttnclass">ზრდა</button>
+                <button onclick="change(-1)" type="button" class="bttnclass">კლება</button>
+            </div>
         </div>
         <!-- Messageplacer -->
         <div class="message">
@@ -25,7 +30,7 @@
                 <button class="btn1"><i class="fa-regular fa-message"></i></button><input id="message-input" type="text">
             </p>
             <p>
-                <button onclick="getMessage()">Submit</button>
+                <button  class="btnnsub" onclick="getMessage()">Submit</button>
             </p>
             
         </div>
