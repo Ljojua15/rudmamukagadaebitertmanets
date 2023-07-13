@@ -1,7 +1,11 @@
 body{
     background: linear-gradient(#b8dafc, rgb(130, 179, 52));
     overflow: hidden;
+    display: flex;
+
 }
+
+/* pass message place */
 
 .hha{
     text-align: center;
@@ -28,7 +32,8 @@ body{
     height: 100vh;
     margin: auto;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content:center;
     align-items: center;
 }
 .message{
@@ -37,7 +42,7 @@ body{
     border-radius: 5px;
     width: 500px;
     height: auto;
-    margin: auto;
+    margin: 25px;
     padding: 0 20px;
     box-shadow: 0px 2px 4px 0px black;
 }
@@ -58,4 +63,57 @@ body{
 #message-output{
     text-align: center;
     text-transform: uppercase;
+}
+.btnnsub{
+    cursor: pointer;
+}
+
+/* text place */
+
+.writtentextbar{
+    border: 1px solid lightgrey;
+    background: whitesmoke;
+    border-radius: 20px;
+    width: 500px;
+    height: auto;
+    padding: 15px 25px;
+    box-shadow: 0px 2px 4px 0px rgb(37, 20, 20);
+    text-align: center;
+    overflow-y: auto;
+    word-wrap: break-word;
+    scrollbar-width: none;
+}
+
+.writtentextbar::-webkit-scrollbar{
+    width: 0;
+    /* სქროლის გაქრობა */
+}
+
+
+/* counter */
+
+.counter{
+    border: 2px solid black;
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center; 
+    align-items: center;
+    text-align: center;
+    background: whitesmoke;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0px 2px 4px 0px rgb(143, 100, 100);
+}
+.bttnclass{
+    cursor: pointer;
+    border-radius: 20px;
+    width: 90px;
+    height: 30px;
+    background: green;
+    box-shadow: 0px 2px 4px 0px rgb(143, 100, 100);
+}
+#count{
+    font-size: 4rem;
 }
