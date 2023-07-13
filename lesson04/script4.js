@@ -9,10 +9,12 @@ function getMessage() {
   messageInput.value = "";
 }
 
+// count space
+
 var count = 0;
-const click = document.getElementsByClassName("bttnclass");
+const click = document.getElementsByClassName("bttnclass1");
 click.addEventListener("keydown", function (event) {
-  if (event.key == "Enter") change();
+  if (event.key == "Enter") change(1);
 });
 
 function change(num) {
