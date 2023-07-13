@@ -1,20 +1,22 @@
-body{
+body {
     background: linear-gradient(#b8dafc, rgb(130, 179, 52));
     overflow: hidden;
     display: flex;
-
 }
+
 
 /* pass message place */
 
-.hha{
+.hha {
     text-align: center;
     font-weight: bold;
 }
-.pp1{
+
+.pp1 {
     border-bottom: 4px solid rgb(255, 242, 125);
 }
-.btn1{
+
+.btn1 {
     border-radius: 5px 0 0 5pxS;
     width: fit-content;
     padding: 8px;
@@ -23,20 +25,23 @@ body{
     border-radius: 5px;
     background: whitesmoke;
 }
-.btn1:hover{
+
+.btn1:hover {
     background: rgba(0, 0, 0, 0.5);
 }
-.maincontainer{
+
+.maincontainer {
     border: 1px solid black;
     width: 95%;
-    height: 100vh;
+    height: 97vh;
     margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
-.message{
+
+.message {
     border: 1px solid lightgrey;
     background: whitesmoke;
     border-radius: 5px;
@@ -46,31 +51,33 @@ body{
     padding: 0 20px;
     box-shadow: 0px 2px 4px 0px black;
 }
-.message input{
+
+.message input {
     width: 90%;
     padding: 8px 0;
     border-radius: 5px;
     border: 1px solid lightgray;
 }
 
-@media(max-width:480px){
-    .message input{
+@media(max-width:480px) {
+    .message input {
         width: 82%;
     }
 }
 
-
-#message-output{
+#message-output {
     text-align: center;
     text-transform: uppercase;
 }
-.btnnsub{
+
+.btnnsub {
     cursor: pointer;
 }
 
+
 /* text place */
 
-.writtentextbar{
+.writtentextbar {
     border: 1px solid lightgrey;
     background: whitesmoke;
     border-radius: 20px;
@@ -84,7 +91,7 @@ body{
     scrollbar-width: none;
 }
 
-.writtentextbar::-webkit-scrollbar{
+.writtentextbar::-webkit-scrollbar {
     width: 0;
     /* სქროლის გაქრობა */
 }
@@ -92,13 +99,13 @@ body{
 
 /* counter */
 
-.counter{
+.counter {
     border: 2px solid black;
     width: 500px;
     height: 250px;
     display: flex;
     flex-direction: column;
-    justify-content:center; 
+    justify-content: center;
     align-items: center;
     text-align: center;
     background: whitesmoke;
@@ -106,7 +113,9 @@ body{
     padding: 25px;
     box-shadow: 0px 2px 4px 0px rgb(143, 100, 100);
 }
-.bttnclass{
+
+.bttnincrease,
+.bttnuncrease {
     cursor: pointer;
     border-radius: 20px;
     width: 90px;
@@ -114,6 +123,7 @@ body{
     background: green;
     box-shadow: 0px 2px 4px 0px rgb(143, 100, 100);
 }
-#count{
+
+#count {
     font-size: 4rem;
 }
