@@ -1,21 +1,20 @@
 //რენდომი API-ის წამოღებით
 
-let contentText
-let authorText
+let contentText;
+let authorText;
 
 function getQuote() {
-    fetch("https://api.quotable.io/random")
-        .then(response => response.json())
-        .then(data => {
-            contentText = document.getElementById('text')
-            contentText.innerHTML = data.content
-            authorText = document.getElementById('author')
-            authorText.innerHTML = data.author
-
-        })
-        .catch(error => {
-            console.log("An error occurred:", error);
-        });
+  fetch("https://api.quotable.io/random")
+    .then((response) => response.json())
+    .then((data) => {
+      contentText = document.getElementById("text");
+      contentText.innerHTML = data.content;
+      authorText = document.getElementById("author");
+      authorText.innerHTML = data.author;
+    })
+    .catch((error) => {
+      console.log("An error occurred:", error);
+    });
 }
 
 //მანუალ შექმნით
@@ -38,11 +37,10 @@ function getQuote() {
 //       '"ქვეყანა იმით კი არ არის უძლური, რომ ღარიბია, არამედ იმით, რომ მცოდნე გონება-გახსნილი გულ-განათებული კაცები არა ჰყავს"',
 //   };
 
-//   var author = Object.keys(azrebi);
-//   var randomAuthor = author[Math.floor(Math.random() * author.length)];
+var author = Object.keys(azrebi);
+var randomAuthor = author[Math.floor(Math.random() * author.length)];
 
-//   var authortext = azrebi[randomAuthor];
+var authortext = azrebi[randomAuthor];
 
-//   document.getElementById("text").innerHTML = authortext;
-//   document.getElementById("author").innerHTML = randomAuthor;
-// }
+document.getElementById("text").innerHTML = authortext;
+document.getElementById("author").innerHTML = randomAuthor;
